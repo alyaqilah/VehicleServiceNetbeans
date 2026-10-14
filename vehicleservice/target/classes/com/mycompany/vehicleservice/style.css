@@ -1,0 +1,238 @@
+/* ==========================================
+   NEXT-GEN NEON PURPLE & BLACK SAAS THEME
+   ========================================== */
+
+.root-pane {
+    -fx-background-color: #09090b; /* Pitch black slate background */
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* Header Banner with Subtle Gradient */
+.header-banner {
+    -fx-background-color: linear-gradient(to right, #18181b, #27272a);
+    -fx-background-radius: 12px;
+    -fx-border-color: #581c87;
+    -fx-border-radius: 12px;
+    -fx-border-width: 1.5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(168, 85, 247, 0.2), 15, 0, 0, 4);
+}
+
+.header-title {
+    -fx-text-fill: #faf5ff;
+    -fx-font-weight: bold;
+    -fx-font-size: 21px;
+}
+
+.header-subtitle-small {
+    -fx-text-fill: #c084fc;
+    -fx-font-size: 12px;
+    -fx-font-weight: 600;
+}
+
+.section-subtitle {
+    -fx-text-fill: #e879f9; /* Vibrant orchid accent */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.error-label {
+    -fx-text-fill: #f87171;
+    -fx-font-weight: bold;
+}
+
+/* Floating Card Containers with Rich Outlines */
+.card-pane {
+    -fx-background-color: #121216; /* Ultra-deep rich dark card */
+    -fx-background-radius: 14px;
+    -fx-border-color: #3b0764; /* Rich purple card outline */
+    -fx-border-radius: 14px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(147, 51, 234, 0.15), 18, 0, 0, 6);
+}
+
+.card-pane .label {
+    -fx-text-fill: #d4d4d8;
+}
+
+/* Form Inputs with Custom Borders & Padding */
+.text-field, .combo-box, .date-picker {
+    -fx-background-color: #1c1c21;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 8px;
+    -fx-border-color: #4c1d95;
+    -fx-border-radius: 8px;
+    -fx-border-width: 1.5px;
+    -fx-padding: 7px 12px;
+}
+
+.text-field:focused, .combo-box:focused, .date-picker:focused {
+    -fx-border-color: #a855f7; /* Glowing neon purple focus ring */
+    -fx-border-width: 2px;
+    -fx-background-color: #1c1c21;
+}
+
+/* Make ComboBox and DatePicker text bright white and clearly visible */
+.combo-box {
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #ffffff;
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #1c1c21;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #7c3aed;
+    -fx-text-fill: #ffffff;
+}
+
+.date-picker .text-field {
+    -fx-text-fill: #ffffff;
+}
+
+/* Checkboxes */
+.check-box {
+    -fx-text-fill: #e4e4e7;
+    -fx-cursor: hand;
+}
+
+.check-box .box {
+    -fx-background-color: #1c1c21;
+    -fx-border-color: #581c87;
+    -fx-border-radius: 4px;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #ffffff;
+}
+
+/* Invoice Summary Card Specifics */
+.invoice-title {
+    -fx-text-fill: #faf5ff;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.badge-normal {
+    -fx-background-color: linear-gradient(to right, #6b21a8, #7c3aed);
+    -fx-background-radius: 8px;
+    -fx-alignment: center;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(124, 58, 237, 0.4), 8, 0, 0, 2);
+}
+
+.badge-normal .label {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+}
+
+.final-amount {
+    -fx-text-fill: #c084fc; /* Glowing violet for final amount */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: #121216;
+    -fx-background-radius: 10px;
+    -fx-border-color: #3b0764;
+    -fx-border-radius: 10px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1c1c21;
+    -fx-background-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-fill: #e879f9;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #121216;
+    -fx-text-fill: #d4d4d8;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #17171c;
+}
+
+/* Action Buttons with Gradients & Glow */
+.action-button-large {
+    -fx-background-color: linear-gradient(to bottom, #9333ea, #7c3aed);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 10px;
+    -fx-padding: 12px 24px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, rgba(147, 51, 234, 0.4), 10, 0, 0, 3);
+}
+
+.action-button-large:hover {
+    -fx-background-color: linear-gradient(to bottom, #a855f7, #9333ea);
+}
+
+.secondary-button {
+    -fx-background-color: #1c1c21;
+    -fx-text-fill: #d8b4fe;
+    -fx-border-color: #581c87;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #27272a;
+    -fx-border-color: #7c3aed;
+}
+
+.danger-button {
+    -fx-background-color: #450a0a;
+    -fx-text-fill: #fca5a5;
+    -fx-border-color: #7f1d1d;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-font-weight: 600;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #7f1d1d;
+}
+
+/* Custom ScrollPane Styling */
+.custom-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.custom-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+/* Fix table cell text color for dark mode */
+.table-view .table-cell {
+    -fx-text-fill: #f4f4f5 !important;
+}
+
+.table-row-cell {
+    -fx-text-fill: #f4f4f5;
+}
+
+/* Ensure general window text is bright and readable */
+.label {
+    -fx-text-fill: #e4e4e7;
+}
